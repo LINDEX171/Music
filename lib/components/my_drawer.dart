@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lastmusicapp/pages/pagepricipale.dart';
 import 'package:lastmusicapp/pages/seetings_page.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -7,7 +8,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Colors.white,
       child: Column(
         children: [
           //logo
@@ -20,23 +21,13 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
           ),
-
-          //home title
-          Padding(
-            padding: const EdgeInsets.only(left: 25.0, top: 25),
-            child: ListTile(
-              title: const Text("H O M E"),
-              leading:const Icon(Icons.home),
-              onTap: () => Navigator.pop(context),
-            ),
-          ),
-
-          //seeting title
+          
+            //HOME title
           Padding(
             padding: const EdgeInsets.only(left: 25.0, top: 0),
             child: ListTile(
-              title: const Text("S E T T I N G S"),
-              leading: const Icon(Icons.settings),
+              title: const Text("H O M E"),
+              leading: const Icon(Icons.home),
               onTap: () {
                 //pop drawer
                 Navigator.pop(context);
@@ -45,12 +36,24 @@ class MyDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const SettingsPage(),
+                    builder: (context) => const MyWidget(),
                   ),
                 );
               },
             ),
-          )
+          ),
+
+          //home title
+          Padding(
+            padding: const EdgeInsets.only(left: 25.0, top: 25),
+            child: ListTile(
+             // title: const Text("H O M E"),
+             // leading:const Icon(Icons.home),
+              onTap: () => Navigator.pop(context),
+            ),
+          ),
+
+        
         ],
       ),
     );

@@ -24,7 +24,7 @@ class SongPage extends StatelessWidget {
 
       //return scaffold UI
       return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: SingleChildScrollView(
           child: Padding(
