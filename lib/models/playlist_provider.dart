@@ -30,7 +30,7 @@ class PlaylistProvider extends ChangeNotifier {
       songName: "Jëli li des",
       artistName: "DIP",
       albumArtImagePath: "assets/images/lflf.jpeg",
-      audioPath: "audio/lflf/jelilides.mp3",
+      audioPath: "audio/lflf/Jelilides.mp3",
       albumName: "LFLF", // Ajoutez l'album ici
     ),
     Song(
@@ -65,7 +65,7 @@ class PlaylistProvider extends ChangeNotifier {
       songName: "Sama Nigga",
       artistName: "DIP",
       albumArtImagePath: "assets/images/lflf.jpeg",
-      audioPath: "audio/lflf/samanigga.mp3",
+      audioPath: "audio/lflf/Samanigga.mp3",
       albumName: "LFLF", // Ajoutez l'album ici
     ),
     Song(
@@ -83,7 +83,7 @@ class PlaylistProvider extends ChangeNotifier {
       albumName: "LFLF", // Ajoutez l'album ici
     ),
     Song(
-      songName: "Wàcc na pare wàccoog yéen",
+      songName: "Wàccna pare wàccogyén",
       artistName: "DIP",
       albumArtImagePath: "assets/images/lflf.jpeg",
       audioPath: "audio/lflf/Wnpwy.mp3",
@@ -268,7 +268,7 @@ class PlaylistProvider extends ChangeNotifier {
       songName: "Holaucoste",
       artistName: "DIP",
       albumArtImagePath: "assets/images/tlk.jpg",
-      audioPath: "audio/tlk/Holaucoste.mp3",
+      audioPath: "audio/tlk/Holocauste.mp3",
       albumName: "TLK", // Ajoutez l'album ici
     ),
     Song(
@@ -380,7 +380,7 @@ class PlaylistProvider extends ChangeNotifier {
       songName: "Beuss Niki Tay",
       artistName: "DIP",
       albumArtImagePath: "assets/images/bnt.jpg",
-      audioPath: "audio/bnt/Btn.mp3",
+      audioPath: "audio/bnt/Bnt.mp3",
       albumName: "BNT", // Ajoutez l'album ici
     ),
     Song(
