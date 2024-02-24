@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lastmusicapp/components/my_drawer.dart';
 import 'package:lastmusicapp/models/playlist_provider.dart';
 import 'package:lastmusicapp/models/song.dart';
 import 'package:lastmusicapp/pages/song_page.dart';

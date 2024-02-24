@@ -15,6 +15,7 @@ class SongPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return Consumer<PlaylistProvider>(builder: (context, value, child) {
       // get paylist
       final playlist = value.playlist;
@@ -22,6 +23,8 @@ class SongPage extends StatelessWidget {
       //get current song index
       final currentSong = playlist[value.currentSongIndex ?? 0];
 
+      
+      
       //return scaffold UI
       return Scaffold(
         backgroundColor: Colors.white,

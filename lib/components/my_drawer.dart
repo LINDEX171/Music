@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lastmusicapp/pages/pagepricipale.dart';
-import 'package:lastmusicapp/pages/seetings_page.dart';
+
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -12,19 +12,21 @@ class MyDrawer extends StatelessWidget {
       child: Column(
         children: [
           //logo
-          DrawerHeader(
-            child: Center(
-              child: Icon(
-                Icons.music_note,
-                size: 40,
-                color: Theme.of(context).colorScheme.inversePrimary,
-              ),
-            ),
-          ),
+        DrawerHeader(
+  child: Center(
+    child: Image.asset(
+      'assets/icon/icon.png',
+      
+     
+    ),
+  ),
+),
+
           
             //HOME title
           Padding(
             padding: const EdgeInsets.only(left: 25.0, top: 0),
+            
             child: ListTile(
               title: const Text("H O M E"),
               leading: const Icon(Icons.home),

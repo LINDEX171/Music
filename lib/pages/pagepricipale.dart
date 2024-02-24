@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lastmusicapp/components/my_drawer.dart';
 import 'package:lastmusicapp/pages/dq_page.dart';
+import 'package:lastmusicapp/pages/feat_page.dart';
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -162,6 +163,52 @@ class _MyWidgetState extends State<MyWidget> {
                                   padding: const EdgeInsets.all(15.0),
                                   child: Text(
                                     'Dip Quainzaine',
+                                    style: TextStyle(
+                                        color: Colors.white, fontSize: 20),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        SizedBox(
+                          height: 20,
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => FeatPage()),
+                            );
+                          },
+                          child: Container(
+                            height: 200,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage('assets/images/dip.jpeg'),
+                              ),
+                            ),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                gradient: LinearGradient(
+                                  begin: Alignment.bottomRight,
+                                  stops: [0.3, 0.9],
+                                  colors: [
+                                    Colors.black.withOpacity(.8),
+                                    Colors.black.withOpacity(.2),
+                                  ],
+                                ),
+                              ),
+                              child: Align(
+                                alignment: Alignment.bottomLeft,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(15.0),
+                                  child: Text(
+                                    'Featuring',
                                     style: TextStyle(
                                         color: Colors.white, fontSize: 20),
                                   ),

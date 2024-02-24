@@ -1,5 +1,7 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:lastmusicapp/main.dart';
 import 'package:lastmusicapp/models/song.dart';
 
 class PlaylistProvider extends ChangeNotifier {
@@ -426,185 +428,320 @@ class PlaylistProvider extends ChangeNotifier {
       albumName: "BNT", // Ajoutez l'album ici
     ),
     Song(
-    songName: "A Thindji",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Athindji.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Reuthieu",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Reuthieu.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Interview",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Interview.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Xam Xam",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Xamxam.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Déguenala",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Déguenala.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Pogba",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Pogba.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Rep'Team",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/RepTeam.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Nangou",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Nangou.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Doundou Oundou",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Doundououndou.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Yakarouma si kén",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/Yakaroumasiken.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Potolamp",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/bnt.jpg",
-    audioPath: "audio/bnt/PotoLamp.mp3",
-    albumName: "BNT", // Ajoutez l'album ici
-  ),
-
-
-
-
-
-  Song(
-    songName: "Califat",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Califat.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Chrono",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Chrono.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Deuil National",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Deuilnational.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Doundine",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Doundine.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Fayeku",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Fayeku.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Free Sn",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Freesn.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Maay Kane",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Maaykane.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Me N You",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Menyou.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Noboma Woon",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Nobomawoon.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Peaceofmind",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Peaceofmind.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Prek",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Prek.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Preuve",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Preuve.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Saajobaan",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Saajobaan.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
-  Song(
-    songName: "Taaw",
-    artistName: "DIP",
-    albumArtImagePath: "assets/images/dq.jpg",
-    audioPath: "audio/dq/Taaw.mp3",
-    albumName: "Dip Quainzaine", // Ajoutez l'album ici
-  ),
+      songName: "A Thindji",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Athindji.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Reuthieu",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Reuthieu.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Interview",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Interview.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Xam Xam",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Xamxam.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Déguenala",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Déguenala.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Pogba",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Pogba.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Rep'Team",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/RepTeam.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Nangou",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Nangou.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Doundou Oundou",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Doundououndou.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Yakarouma si kén",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/Yakaroumasiken.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Potolamp",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/bnt.jpg",
+      audioPath: "audio/bnt/PotoLamp.mp3",
+      albumName: "BNT", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Califat",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Califat.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Beutset",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Beutset.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Chrono",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Chrono.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Deuil National",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Deuilnational.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Doundine",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Doundine.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Fayeku",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Fayeku.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Free Sn",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Freesn.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Maay Kane",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Maaykane.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Me N You",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Menyou.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Noboma Woon",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Nobomawoon.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Peaceofmind",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Peaceofmind.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Prek",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Prek.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Preuve",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Preuve.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Saajobaan",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Saajobaan.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Taaw",
+      artistName: "DIP",
+      albumArtImagePath: "assets/images/dq.jpg",
+      audioPath: "audio/dq/Taaw.mp3",
+      albumName: "Dip Quainzaine", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Baby",
+      artistName: "DIP ft Aida samb",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Baby.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Bo beugue degu deug",
+      artistName: "DIP ft Hussain",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Bbdd.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Fayma Money",
+      artistName: "DIP ft elzo & Akhlou Brick",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Faymamoney.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Fou lerr lako tekk",
+      artistName: "DIP ft Reptyle",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Fllt.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Game on",
+      artistName: "DIP ft Bruce Melodie",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Gameon.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Role",
+      artistName: "DIP ft Gee",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Gee.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "I Fight",
+      artistName: "DIP ft Kanyzii",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Ifight.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Jambaar",
+      artistName: "DIP ft Waly Seck",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Jambaar.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Lolou Késse",
+      artistName: "DIP ft Dizzy Kha",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Loloukesse.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Louxouss",
+      artistName: "DIP ft Akbess ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Louxouss.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Mon ami mon frère",
+      artistName: "DIP ft Reptyle",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Monami.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "gna gna gna",
+      artistName: "DIP ft   jaay21 ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/nana.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Ndanane",
+      artistName: "DIP ft Bm Jaay ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Ndanane.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Positiver",
+      artistName: "DIP ft karabalik ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Positiver.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "une si longue lettre",
+      artistName: "DIP ft Elzo ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Sll.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Vybe",
+      artistName: "DIP ft shecky ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Vybe.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Wareef",
+      artistName: "DIP ft  PPS ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Wareef.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Yaag Yaag",
+      artistName: "DIP ft  Jah Hustlah ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Yaag.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
+    Song(
+      songName: "Yeungeul Si Say Mbague",
+      artistName: "DIP ft  OMG ",
+      albumArtImagePath: "assets/images/dip.jpeg",
+      audioPath: "audio/feat/Ysm.mp3",
+      albumName: "Featuring", // Ajoutez l'album ici
+    ),
   ];
 
   //current song playing index
@@ -638,6 +775,27 @@ class PlaylistProvider extends ChangeNotifier {
     await _audioPlayer.play(AssetSource(path)); //play the new song
     _isPlaying = true;
     notifyListeners();
+
+    // Affichage de la notification
+    final AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+      'your channel id',
+      'your channel name',
+      'your channel description',
+      importance: Importance.max,
+      priority: Priority.high,
+      ticker: 'ticker',
+      sound: null,
+      vibrationPattern: null,
+    );
+    final NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await flutterLocalNotificationsPlugin.show(
+      0, // ID de la notification
+      _playlist[_currentSongIndex!].albumName, // Titre de la notification
+      _playlist[_currentSongIndex!].songName, // Contenu de la notification
+      platformChannelSpecifics,
+    );
   }
 
 //pause current song
