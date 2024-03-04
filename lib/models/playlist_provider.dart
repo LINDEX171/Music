@@ -781,7 +781,6 @@ class PlaylistProvider extends ChangeNotifier {
         AndroidNotificationDetails(
       'your channel id',
       'your channel name',
-      'your channel description',
       importance: Importance.max,
       priority: Priority.high,
       ticker: 'ticker',
