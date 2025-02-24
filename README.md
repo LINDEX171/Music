@@ -3,7 +3,7 @@
 A new Flutter project.
 
 
-🎵 Step into a whole new world of music exploration with Dip, the awesome app made using Flutter! 🎵 
+🎵 Step into a whole new world of music exploration with Dip, the awesome app made using Flutter!  
 
 ![WhatsApp Image 2024-03-08 at 03 01 36](https://github.com/LINDEX171/Music/assets/129359610/8c1b4df0-c203-4684-be22-590a8c0fc5c8)
 ![WhatsApp Image 2024-03-08 at 03 01 36 (1)](https://github.com/LINDEX171/Music/assets/129359610/9603aa63-b177-4c18-b72c-a7be64a91de3)
